@@ -1,4 +1,6 @@
 const timeout = 300000 ;
+jest.setTimeout(timeout);
+
 const fs = require('fs');
 beforeAll(async () => {
   path = fs.realpathSync('file://../examples/index.html');
