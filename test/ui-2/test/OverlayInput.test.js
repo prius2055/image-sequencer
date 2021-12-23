@@ -1,5 +1,4 @@
-const timeout = process.env.SLOWMO ? 30000 : 10000;
-jest.setTimeout(timeout);
+jest.setTimeout(10000);
 
 const fs = require('fs');
 beforeAll(async () => {
@@ -44,5 +43,5 @@ describe('Overlay Ranged input', () => {
       console.log(error);
     }
    
-  }, timeout);
+  });
 });
