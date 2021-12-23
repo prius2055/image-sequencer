@@ -1,5 +1,4 @@
-const timeout = 300000 ;
-jest.setTimeout(timeout);
+jest.setTimeout(10000);
 
 const fs = require('fs');
 beforeAll(async () => {
@@ -7,8 +6,9 @@ beforeAll(async () => {
   await page.goto('file://' + path, {waitUntil: 'domcontentloaded'});
   await page.setViewport({ width: 1500, height: 700});
 });
-describe('Crop UI', ()=>{
-  test('Crop UI', async()=>{
+
+describe('Crop UI', () => {
+  test('Crop UI', async() => {
     // Wait for the load step to get loaded.
     await page.waitForSelector('.step');
     const Length = await page.evaluate(() => document.querySelectorAll('.step').length);
@@ -44,5 +44,5 @@ describe('Crop UI', ()=>{
     expect(LengthChanged).toBe(2);
     expect(Lengthremoved).toBe(1);
     expect(LengthReadded).toBe(2);
-  }, timeout);
+  });
 });

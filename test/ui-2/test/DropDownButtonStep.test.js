@@ -1,5 +1,4 @@
-const timeout = process.env.SLOWMO ? 30000 : 10000;
-jest.setTimeout(timeout);
+jest.setTimeout(10000);
 
 const fs = require('fs');
 beforeAll(async () => {
@@ -33,5 +32,5 @@ describe('Add step dropdown', ()=>{
     expect(Length).toBe(1);
     expect(LengthChanged).toBe(2);
 
-  }, timeout);
+  });
 });

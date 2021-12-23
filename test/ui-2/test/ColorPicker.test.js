@@ -1,5 +1,4 @@
-const timeout = process.env.SLOWMO ? 30000 : 10000;
-jest.setTimeout(timeout);
+jest.setTimeout(10000);
 
 const fs = require('fs');
 beforeAll(async () => {
@@ -34,5 +33,5 @@ describe('Color Picker', () => {
     // Check if value is changed or not
     expect(heightInput).toEqual('100');
 
-  }, timeout);
+  });
 });
