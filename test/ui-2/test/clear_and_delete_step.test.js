@@ -1,5 +1,4 @@
-jest.setTimeout(30000);
-jest.useFakeTimers('legacy');
+jest.setTimeout(10000);
 
 const fs = require('fs');
 
