@@ -1,6 +1,6 @@
 {
   "name": "image-sequencer",
-  "version": "3.6.0",
+  "version": "3.7.0",
   "description": "A modular JavaScript image manipulation library modeled on a storyboard.",
   "main": "src/ImageSequencer.js",
   "scripts": {
@@ -88,6 +88,7 @@
     "@babel/plugin-syntax-object-rest-spread": "^7.2.0",
     "babelify": "^10.0.0",
     "browserify": "17.0.0",
+    "canvas": "^2.8.0",
     "eslint": "^8.0.0",
     "grunt": "^1.0.3",
     "grunt-browser-sync": "^2.2.0",
