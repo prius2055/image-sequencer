@@ -44,7 +44,6 @@ RUN sudo apt-get update && apt-get install -y apt-transport-https \
     libnspr4 \
     libnss3 \
     libpango-1.0-0 \
-    libpango-1.0-dev \
     libpangocairo-1.0-0 \
     libstdc++6 \
     librsvg2-dev \
