@@ -54,7 +54,7 @@
     "gifshot": "^0.4.5",
     "glfx": "0.0.4",
     "gpu.js": "^2.3.1",
-    "imgareaselect": "git+https://github.com/jywarren/imgareaselect.git#v1.0.0-rc.2",
+    "imgareaselect": "git+https://git@github.com/jywarren/imgareaselect.git#v1.0.0-rc.2",
     "image-sequencer-invert": "^1.0.0",
     "imagejs": "0.0.9",
     "imagemin": "^7.0.1",
