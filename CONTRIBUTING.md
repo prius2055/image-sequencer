@@ -118,9 +118,9 @@ function ModuleName(options,UI) {
       ];
 ```
 ### Running a browser-only module in node
-If your module has browser specific code or you are consuming a dependency which does the `gl-context` api. We designed this api especially for webl based modules but since it runs the module in a headless browser, ti supports all browser specific APIs.
+If your module has browser specific code or you are consuming a dependency which does the `gl-context` API. We designed this api especially for web-based modules but since it runs the module in a headless browser, it supports all browser specific APIs.
 
-The api must be used in the following format
+The API must be used in the following format
 ```js
 var step = this;
 
@@ -197,7 +197,7 @@ There are four events in all:
 * `UI.onComplete(options.step)` must be emitted whenever the output of a draw call
 is ready. An argument, that is the DataURL of the output image must be passed in.
 * `UI.onRemove(options.step)` is emitted automatically and the module should not emit it.
-* `UI.notify(msg,id)` must be emmited when a notification has to be produced.
+* `UI.notify(msg,id)` must be emitted when a notification has to be produced.
 
 ### Name and description
 
@@ -244,7 +244,7 @@ Also, A module may have output values. These must be defined as shown above.
 
 ### Progress reporting
 
-The default "loading spinner" can be optionally overriden with a custom progress object to draw progress on the CLI, following is a basic module format for the same:
+The default "loading spinner" can be optionally overridden with a custom progress object to draw progress on the CLI, following is a basic module format for the same:
 
 ```js
 module.exports = function ModuleName(options,UI) {
@@ -279,7 +279,7 @@ module.exports = function ModuleName(options,UI) {
 }
 ```
 
-The `progressObj` parameter of `draw()` is not consumed unless a custom progress bar needs to be drawn, for which this default spinner should be stopped with `progressObj.stop()` and image-sequencer is informed about the custom progress bar with `progressObj.overrideFlag = true;` following which this object can be overriden with custom progress object.
+The `progressObj` parameter of `draw()` is not consumed unless a custom progress bar needs to be drawn, for which this default spinner should be stopped with `progressObj.stop()` and image-sequencer is informed about the custom progress bar with `progressObj.overrideFlag = true;` following which this object can be overridden with custom progress object.
 
 
 ### Module example
@@ -292,7 +292,7 @@ For help integrating, please open an issue.
 
 ## Meta Module
 
-IMAGE SEQUENCER supports "meta modules" -- modules made of other modules. The syntax and structure of these meta modules is very similar to standard modules. Sequencer can also genarate meta modules dynamically with the function `createMetaModule` which can be called in the following ways
+IMAGE SEQUENCER supports "meta modules" -- modules made of other modules. The syntax and structure of these meta modules is very similar to standard modules. Sequencer can also generate meta modules dynamically with the function `createMetaModule` which can be called in the following ways
 
 ```js
 
@@ -387,7 +387,7 @@ npx eslint <file path> --fix
 ```
 Be sure to not include the angular brackets(<>).
 
-Husky ensures automation of the above steps with git-hooks(eg. git add,git commit..). However we don't want to check and fix changes of the entire codebase with each commit and that the fixes made by eslint appear unstaged and require us to commit them  again and that is where lint-staged helps.
+Husky ensures automation of the above steps with git-hooks(eg. git add, git commit..). However we don't want to check and fix changes of the entire codebase with each commit and that the fixes made by eslint appear unstaged and require us to commit them  again and that is where lint-staged helps.
 
 If we want `husky` to not verify the commit and push it anyway, use `git commit -m "message" --no-verify.`
 
