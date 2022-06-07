@@ -479,3 +479,13 @@ The following shell scripts are present in the `scripts/` directory.
  This script is safe to use directly because it separately clones the repo in a temporary directory.
 
   Arguments: None since it is a an *interactive* script, ie it asks the user for input.
+
+****
+
+# Comments
+
+1. Methods must be described using [JSDoc comments](https://devdocs.io/jsdoc/)
+2. Misc code comments should be inline unless it is a long sentence.
+3. No use of continuous tenses, no pronouns.
+4. No redundant comments.
+5. Each comment should start with an uppercase letter and end with a full stop.
