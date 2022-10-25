@@ -23,8 +23,6 @@ Below is a "diff" showing in red (and a `-`) which lines to remove, and in green
 ```diff
 $DIFF
 ```
-
-
 - [ ] 💾 **Commit** your changes
 
 - [ ] 🔀 **Start a Pull Request**. There are two ways how you can start a pull request:
